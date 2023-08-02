@@ -15,8 +15,7 @@ The Complex YOLO ROS 3D Object Detection project is an integration of the [Compl
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Motivation
 The project's goal is to empower robots and autonomous vehicles with robust and real-time perception capabilities, crucial for real-world applications such as autonomous navigation, object tracking, and dynamic environment interaction. By leveraging advanced 3D object detection algorithms within the ROS ecosystem, the Complex YOLO ROS project opens new horizons for safer and more efficient robotics in dynamic and challenging environments.
@@ -34,9 +33,81 @@ Matplotlib
 
 CV Bridge
 
-## Usage
+## Usage (Check out in [YouTube](https://www.youtube.com/watch?v=roS3FgU9A5E))
 1) Create a new workspace directory:
 
 * `mkdir {Workspace}`
 
 * `cd {Workspace}`
+
+2) Create the "src" directory inside the workspace:
+
+   * `mkdir src`
+   * `cd src`
+3) Clone the Complex YOLO ROS 3D Object Detection repository:
+
+   * `git clone https://github.com/GutlapalliNikhil/Complex-YOLO-ROS-3D-Object-Detection.git`
+
+4) Download the 3D KITTI detection dataset from the [KITTI website](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d).
+5) Extract the dataset and place the files in the "dataset/kitti" folder with the following structure:
+- ImageSets
+  - test.txt
+  - train.txt
+  - val.txt
+- testing
+  - calib
+  - images_2
+  - velodyne
+- training
+  - calib
+  - images_2
+  - label_2
+  - velodyne
+6) Go back to the workspace directory:
+`cd {Workspace}`
+7) Build the ROS packages
+`catkin_make`
+8) Set up the environment:
+`source devel/setup.bash`
+9) To publish data related to the velodyne, GT targets, and file names, run:
+`rosrun complex_yolo_ros kitti_data_publisher.py`
+This will publish the following topics:
+
+* /img_files_name: File names of the images.
+* /input_img: BEV images that are input to the neural network.
+* /gt_targets: Ground truth labels.
+
+10) Subscribe to the /input_img topic, pass the data to the neural network model, and publish the model outputs on the /predicted_targets topic:
+`rosrun complex_yolo_ros kitti_data_subscriber.py`
+
+11) To visualize the outputs and ground truths, run:
+`rosrun complex_yolo_ros kitti_data_visualizer.py`
+
+You can see the control on the terminal where kitti_data_publisher.py, where it asks for the command 'n' to run and display next image and 'e' to exit.
+
+This will display the camera view and BEV for both the model's predictions and the ground truth labels.
+
+Now, your Complex YOLO ROS 3D Object Detection project is set up, and you can evaluate the model's performance and visualize the results using ROS.
+
+## Results
+
+FPS obtained on GeForce RTX 3050: 26 fps
+
+#### Individual mAP
+
+* Class 0 (Car): precision = 0.9117, recall = 0.9753, AP = 0.9688, f1: 0.9424
+* Class 1 (Ped): precision = 0.6961, recall = 0.9306, AP = 0.7854, f1: 0.7964
+* Class 2 (Cyc): precision = 0.8000, recall = 0.9377, AP = 0.9096, f1: 0.8634
+
+#### Overall mAP
+mAP: 0.8879181553846359
+
+#### Visualization Demo
+![a](https://github.com/GutlapalliNikhil/Complex-YOLO-ROS-3D-Object-Detection/assets/33520288/a0a5abde-604b-4ec2-852b-72756c9a660e)
+
+#### RQT Graph
+![b](https://github.com/GutlapalliNikhil/Complex-YOLO-ROS-3D-Object-Detection/assets/33520288/8bc3fab0-9222-4129-91bb-09233eb70a4f)
+
+## Credits
+Thanks to the Authors of Complex YOLOv4 for their contribution in the field of 3D Perseption and thanks to the ROS family.
+Original Repo: [Complex-YOLOv4-Pytorch](https://github.com/maudzung/Complex-YOLOv4-Pytorch)
