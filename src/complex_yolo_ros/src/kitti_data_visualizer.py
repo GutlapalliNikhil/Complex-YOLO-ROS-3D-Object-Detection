@@ -1,0 +1,169 @@
+print("Please Wait untill System Check")
+print("System Check in Progress")
+import rospy
+from std_msgs.msg import String
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+import cv2
+import torch
+
+import numpy as np
+import sys
+import rospy
+from std_msgs.msg import Int32, Float32MultiArray, String
+from sensor_msgs.msg import Image
+import torch
+from torch.utils.data import DataLoader
+from cv_bridge import CvBridge
+
+sys.path.append('/media/nikhil/Ubuntu_11/pointpillars/ComplexYoloROS/src/complex_yolo_ros/src')
+
+from data_process.kitti_dataset import KittiDataset
+from data_process.transformation import Compose, OneOf, Random_Rotation, Random_Scaling, Horizontal_Flip, Cutout
+
+from models.model_utils import create_model
+
+from utils.evaluation_utils import post_processing_v2
+import matplotlib.pyplot as plt
+
+import data_process.kitti_bev_utils as bev_utils
+from data_process import kitti_data_utils
+from utils.visualization_utils import show_image_with_boxes, merge_rgb_to_bev, invert_target
+import config.kitti_config as cnf
+
+# Global variables to store received data
+img_files_name_msg = None
+input_img_msg = None
+gt_targets_msg = None
+predicted_targets_msg = None
+
+
+def convert_cv2_to_tensor(img_cv2):
+    # Convert the CV2 image to a NumPy array and then to a PyTorch tensor
+    img_np = cv2.cvtColor(img_cv2, cv2.COLOR_BGR2RGB)
+    img_np = img_np.transpose(2, 0, 1)
+    img_tensor = torch.tensor(img_np, dtype=torch.float32) / 255.0  # Convert to float32 and normalize to [0, 1]
+    return img_tensor
+    
+def img_files_name_callback(msg):
+    global img_files_name_msg
+    img_files_name_msg = msg
+
+def input_img_callback(msg):
+    global input_img_msg
+    input_img_msg = msg
+
+def gt_targets_callback(msg):
+    global gt_targets_msg
+    gt_targets_msg = msg
+
+def predicted_targets_callback(msg):
+    global predicted_targets_msg
+    predicted_targets_msg = msg
+
+def image_subscriber():
+    global img_files_name_msg
+    global input_img_msg
+    global gt_targets_msg
+    global predicted_targets_msg
+    
+    rospy.init_node('kitti_data_visualizer', anonymous=True)
+    
+    rospy.Subscriber('img_files_name', String, img_files_name_callback)
+    rospy.Subscriber('input_img', Image, input_img_callback)
+    rospy.Subscriber('gt_targets', String, gt_targets_callback)
+    rospy.Subscriber('predicted_targets', String, predicted_targets_callback)
+    print("System Check Done")
+    while not rospy.is_shutdown():
+        
+    
+        if img_files_name_msg is not None and input_img_msg is not None and gt_targets_msg is not None and predicted_targets_msg is not None:
+            print("###########################################")
+            bridge = CvBridge()
+            imgs = bridge.imgmsg_to_cv2(input_img_msg, desired_encoding="bgr8")
+            
+            imgs = convert_cv2_to_tensor(imgs)
+            imgs = torch.unsqueeze(imgs, 0)
+
+            gt_targets_list = eval(gt_targets_msg.data)
+            gt_targets_tensor = torch.tensor(gt_targets_list)
+            
+            predicted_targets_list = eval(predicted_targets_msg.data)
+            predicted_targets_tensor = torch.tensor(predicted_targets_list)            
+
+            predicted_targets_msg = None
+            
+
+            img_rgb = cv2.imread(img_files_name_msg.data)
+
+            print(img_files_name_msg.data)
+            calib = kitti_data_utils.Calibration(img_files_name_msg.data.replace(".png", ".txt").replace("image_2", "calib"))
+            objects_pred = invert_target(gt_targets_tensor[:, 1:], calib, img_rgb.shape, RGB_Map=None)
+            img_rgb = show_image_with_boxes(img_rgb, objects_pred, calib, False)
+           
+            #cv2.imshow("Ground Truth Camera View", img_rgb)
+            
+            
+            
+            gt_targets_tensor[:, 2:6] *= 608
+            gt_targets_tensor[:, 6] = torch.atan2(gt_targets_tensor[:, 6], gt_targets_tensor[:, 7])
+            img_bev = imgs.squeeze() * 255
+            img_bev = img_bev.permute(1, 2, 0).numpy().astype(np.uint8)
+            img_bev = cv2.resize(img_bev, (608, 608))
+            
+            for c, x, y, w, l, yaw in gt_targets_tensor[:, 1:7].numpy():
+                bev_utils.drawRotatedBox(img_bev, x, y, w, l, yaw, cnf.colors[int(c)])
+        
+            img_bev = cv2.rotate(img_bev, cv2.ROTATE_180)
+
+            #cv2.imshow('Ground Truth BEV', img_bev)
+            
+            
+            outputs = predicted_targets_tensor
+
+            outputs = outputs/608
+            outputs = outputs[:, [8, 0, 1, 2, 3, 4, 5]]
+            
+            zeros_tensor = torch.zeros_like(outputs[:, :1])
+            output = torch.cat((zeros_tensor, outputs), dim=1)
+            
+            targets_1 = output
+            
+            
+            img_rgb_1 = cv2.imread(img_files_name_msg.data)
+
+            print(img_files_name_msg.data)
+            calib = kitti_data_utils.Calibration(img_files_name_msg.data.replace(".png", ".txt").replace("image_2", "calib"))
+            objects_pred_1 = invert_target(targets_1[:, 1:], calib, img_rgb_1.shape, RGB_Map=None)
+            img_rgb_1 = show_image_with_boxes(img_rgb_1, objects_pred_1, calib, False)
+            
+            #cv2.imshow("Predicted Camera View", img_rgb_1)
+            
+            targets_1[:, 2:6] *= 608
+            targets_1[:, 6] = torch.atan2(targets_1[:, 6], targets_1[:, 7])
+            img_bev_1 = imgs.squeeze() * 255
+            img_bev_1 = img_bev_1.permute(1, 2, 0).numpy().astype(np.uint8)
+            img_bev_1 = cv2.resize(img_bev_1, (608, 608))
+            
+            for c, x, y, w, l, yaw in targets_1[:, 1:7].numpy():
+                bev_utils.drawRotatedBox(img_bev_1, x, y, w, l, yaw, cnf.colors[int(c)])
+        
+            img_bev_1 = cv2.rotate(img_bev_1, cv2.ROTATE_180)
+
+            #cv2.imshow('Input BEV', img_bev_1)
+
+
+
+            
+            out_img = merge_rgb_to_bev(img_rgb, img_bev, output_width=608)
+            out_img_1 = merge_rgb_to_bev(img_rgb_1, img_bev_1, output_width=608)
+            
+            cv2.imshow('Ground Truth Camera View and BEV', out_img)
+            cv2.imshow('Predicted Camera View and BEV', out_img_1)
+            
+            cv2.waitKey(1)
+            
+    rospy.spin()
+
+if __name__ == '__main__':
+    image_subscriber()

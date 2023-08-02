@@ -1,0 +1,438 @@
+2023-07-25 23:20:03,802: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-25 23:20:03,802: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': 0, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cuda', index=0), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-25 23:20:32,118: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-25 23:20:32,118: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': 0, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cuda', index=0), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-25 23:20:33,448: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-25 23:20:33,448: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-25 23:20:57,116: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-25 23:20:57,116: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': 0, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cuda', index=0), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-25 23:20:57,866: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-25 23:20:57,867: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-25 23:21:01,544: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 1441
+2023-07-25 23:21:01,544: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-25 23:21:01,544: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-25 23:21:01,544: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-25 23:21:01,544: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-25 23:22:14,183: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-25 23:22:14,184: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': 0, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cuda', index=0), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-25 23:22:14,925: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-25 23:22:14,925: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-25 23:22:18,442: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 1441
+2023-07-25 23:22:18,443: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-25 23:22:18,443: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-25 23:22:18,443: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-25 23:22:18,443: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-25 23:23:03,496: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-25 23:23:03,496: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': 0, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cuda', index=0), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-25 23:23:04,203: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-25 23:23:04,204: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-25 23:23:08,272: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-25 23:23:08,272: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': 0, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cuda', index=0), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-25 23:23:09,024: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-25 23:23:09,024: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-25 23:23:12,757: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-25 23:23:12,757: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-25 23:23:12,757: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-25 23:23:12,757: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-25 23:23:12,757: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-25 23:23:22,856: logger.py - info(), at Line 38:INFO:
+Train - Epoch: [1/300][  49/5763]	Time  0.165 ( 0.202)	Data  0.001 ( 0.005)	Loss 2.1536e+02 (2.1682e+02)
+2023-07-25 23:23:31,722: logger.py - info(), at Line 38:INFO:
+Train - Epoch: [1/300][  99/5763]	Time  0.180 ( 0.190)	Data  0.001 ( 0.003)	Loss 6.6771e+02 (2.9058e+02)
+2023-07-25 23:23:40,515: logger.py - info(), at Line 38:INFO:
+Train - Epoch: [1/300][ 149/5763]	Time  0.173 ( 0.185)	Data  0.001 ( 0.002)	Loss 1.7314e+02 (2.7668e+02)
+2023-07-25 23:23:49,631: logger.py - info(), at Line 38:INFO:
+Train - Epoch: [1/300][ 199/5763]	Time  0.168 ( 0.184)	Data  0.001 ( 0.002)	Loss 2.1307e+02 (2.5509e+02)
+2023-07-25 23:23:59,034: logger.py - info(), at Line 38:INFO:
+Train - Epoch: [1/300][ 249/5763]	Time  0.206 ( 0.185)	Data  0.001 ( 0.002)	Loss 2.0059e+02 (2.4038e+02)
+2023-07-25 23:24:08,240: logger.py - info(), at Line 38:INFO:
+Train - Epoch: [1/300][ 299/5763]	Time  0.197 ( 0.185)	Data  0.001 ( 0.002)	Loss 1.2575e+02 (2.2272e+02)
+2023-07-25 23:24:17,217: logger.py - info(), at Line 38:INFO:
+Train - Epoch: [1/300][ 349/5763]	Time  0.180 ( 0.184)	Data  0.000 ( 0.001)	Loss 1.0232e+02 (2.0693e+02)
+2023-07-25 23:24:26,071: logger.py - info(), at Line 38:INFO:
+Train - Epoch: [1/300][ 399/5763]	Time  0.171 ( 0.183)	Data  0.001 ( 0.001)	Loss 8.7287e+01 (1.9329e+02)
+2023-07-25 23:24:35,332: logger.py - info(), at Line 38:INFO:
+Train - Epoch: [1/300][ 449/5763]	Time  0.184 ( 0.183)	Data  0.001 ( 0.001)	Loss 7.4684e+01 (1.8135e+02)
+2023-07-31 14:54:04,680: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 14:54:04,681: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-31 14:54:06,096: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 14:54:06,096: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 14:57:35,764: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 14:57:35,764: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-31 14:57:37,155: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 14:57:37,156: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 14:58:08,499: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 14:58:08,500: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-31 14:58:09,933: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 14:58:09,933: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 14:58:44,713: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 14:58:44,714: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-31 14:58:46,112: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 14:58:46,112: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 14:58:50,413: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 1441
+2023-07-31 14:58:50,414: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 14:58:50,414: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 14:58:50,414: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 14:58:50,414: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 14:59:54,195: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 14:59:54,195: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-31 14:59:55,587: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 14:59:55,587: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 15:02:24,328: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 15:02:24,329: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-31 15:02:25,540: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 15:02:25,541: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 15:02:31,622: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 15:02:31,622: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 4, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 16, 'is_master_node': True}
+2023-07-31 15:02:32,625: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 15:02:32,625: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 15:02:37,395: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 1441
+2023-07-31 15:02:37,395: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:02:37,396: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 15:02:37,396: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:02:37,396: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 15:04:04,656: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 15:04:04,656: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 15:04:05,623: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 15:04:05,623: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 15:04:09,732: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 15:04:09,732: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:04:09,732: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 15:04:09,732: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:04:09,732: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 15:04:43,726: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 15:04:43,726: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 15:04:45,184: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 15:04:45,184: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 15:04:49,427: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 15:04:49,427: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:04:49,427: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 15:04:49,427: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:04:49,427: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 15:10:22,073: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 15:10:22,073: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 15:10:23,468: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 15:10:23,468: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 15:10:27,597: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 15:10:27,597: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:10:27,597: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 15:10:27,597: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:10:27,597: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 15:23:06,267: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 15:23:06,267: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 15:23:07,206: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 15:23:07,206: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 15:23:10,943: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 15:23:10,943: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:23:10,943: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 15:23:10,943: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:23:10,943: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 15:51:55,817: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 15:51:55,817: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 15:51:56,802: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 15:51:56,802: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 15:52:00,425: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 15:52:00,425: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:52:00,425: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 15:52:00,425: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:52:00,425: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 15:52:22,666: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 15:52:22,666: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 15:52:23,629: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 15:52:23,629: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 15:52:27,175: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 15:52:27,175: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:52:27,175: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 15:52:27,176: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 15:52:27,176: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 16:04:01,195: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 16:04:01,195: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 16:04:02,139: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 16:04:02,139: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 16:04:05,830: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 16:04:05,831: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:04:05,831: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 16:04:05,831: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:04:05,831: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 16:04:25,435: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 16:04:25,436: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 16:04:26,392: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 16:04:26,392: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 16:04:29,994: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 16:04:29,994: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:04:29,994: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 16:04:29,994: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:04:29,994: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 16:05:48,700: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 16:05:48,700: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 16:05:49,670: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 16:05:49,670: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 16:05:53,313: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 16:05:53,313: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:05:53,313: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 16:05:53,313: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:05:53,314: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 16:06:03,526: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 16:06:03,526: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 16:06:04,511: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 16:06:04,511: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 16:06:07,974: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 16:06:07,974: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:06:07,974: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 16:06:07,974: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:06:07,974: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 16:07:28,312: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 16:07:28,313: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 16:07:29,299: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 16:07:29,299: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 16:07:32,809: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 16:07:32,809: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:07:32,809: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 16:07:32,809: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:07:32,809: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 16:10:02,699: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 16:10:02,700: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 16:10:03,722: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 16:10:03,723: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 16:10:07,523: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 16:10:07,524: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:10:07,524: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 16:10:07,524: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:10:07,524: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 16:10:25,321: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 16:10:25,322: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 16:10:26,396: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 16:10:26,396: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 16:10:29,972: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 16:10:29,972: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:10:29,972: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 16:10:29,972: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:10:29,972: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 16:11:57,499: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 16:11:57,499: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 16:11:58,453: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 16:11:58,453: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 16:12:01,995: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 16:12:01,996: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:12:01,996: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 16:12:01,996: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:12:01,996: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
+2023-07-31 16:12:54,022: logger.py - info(), at Line 38:INFO:
+>>> Created a new logger
+2023-07-31 16:12:54,022: logger.py - info(), at Line 38:INFO:
+>>> configs: {'seed': 2020, 'saved_fn': 'complexer_yolo', 'working_dir': '../', 'arch': 'darknet', 'cfgfile': 'config/cfg/complex_yolov4.cfg', 'pretrained_path': None, 'use_giou_loss': False, 'img_size': 608, 'hflip_prob': 0.5, 'cutout_prob': 0.0, 'cutout_nholes': 1, 'cutout_ratio': 0.3, 'cutout_fill_value': 0.0, 'multiscale_training': False, 'mosaic': False, 'random_padding': False, 'no_val': False, 'num_samples': None, 'num_workers': 4, 'batch_size': 1, 'print_freq': 50, 'tensorboard_freq': 50, 'checkpoint_freq': 5, 'start_epoch': 1, 'num_epochs': 300, 'lr_type': 'cosin', 'lr': 0.001, 'minimum_lr': 1e-07, 'momentum': 0.949, 'weight_decay': 0.0005, 'optimizer_type': 'adam', 'burn_in': 50, 'steps': [1500, 4000], 'world_size': -1, 'rank': -1, 'dist_url': 'tcp://127.0.0.1:29500', 'dist_backend': 'nccl', 'gpu_idx': None, 'no_cuda': False, 'multiprocessing_distributed': False, 'evaluate': False, 'resume_path': None, 'conf_thresh': 0.5, 'nms_thresh': 0.5, 'iou_thresh': 0.5, 'device': device(type='cpu'), 'ngpus_per_node': 1, 'pin_memory': True, 'dataset_dir': '../dataset/kitti', 'checkpoints_dir': '../checkpoints/complexer_yolo', 'logs_dir': '../logs/complexer_yolo', 'distributed': False, 'subdivisions': 64, 'is_master_node': True}
+2023-07-31 16:12:54,946: logger.py - info(), at Line 38:INFO:
+number of trained parameters of the model: 63959226
+2023-07-31 16:12:54,946: logger.py - info(), at Line 38:INFO:
+>>> Loading dataset & getting dataloader...
+2023-07-31 16:12:58,524: logger.py - info(), at Line 38:INFO:
+number of batches in training set: 5763
+2023-07-31 16:12:58,524: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:12:58,525: logger.py - info(), at Line 38:INFO:
+=================================== 1/300 ===================================
+2023-07-31 16:12:58,525: logger.py - info(), at Line 38:INFO:
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+2023-07-31 16:12:58,525: logger.py - info(), at Line 38:INFO:
+>>> Epoch: [1/300]
