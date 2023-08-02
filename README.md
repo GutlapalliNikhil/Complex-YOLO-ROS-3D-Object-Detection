@@ -34,22 +34,15 @@ Matplotlib
 CV Bridge
 
 ## Usage (Check out in [YouTube](https://www.youtube.com/watch?v=roS3FgU9A5E))
-1) Create a new workspace directory:
-
-* `mkdir {Workspace}`
-
-* `cd {Workspace}`
-
-2) Create the "src" directory inside the workspace:
-
-   * `mkdir src`
-   * `cd src`
-3) Clone the Complex YOLO ROS 3D Object Detection repository:
-
+1) Clone the Complex YOLO ROS 3D Object Detection repository:
    * `git clone https://github.com/GutlapalliNikhil/Complex-YOLO-ROS-3D-Object-Detection.git`
-
-4) Download the 3D KITTI detection dataset from the [KITTI website](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d).
-5) Extract the dataset and place the files in the "dataset/kitti" folder with the following structure:
+   * `cd Complex-YOLO-ROS-3D-Object-Detection/src/complex_yolo_ros`
+2) Download the 3D KITTI detection dataset from the [KITTI website](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d).
+3) Create the folder dataset and create another folder kitti inside that
+   * `mkdir folder`
+   * `cd folder`
+   * `mkdir kitti`
+4) Extract the dataset and place the files in the "dataset/kitti" folder with the following structure:
 - ImageSets
   - test.txt
   - train.txt
@@ -63,8 +56,9 @@ CV Bridge
   - images_2
   - label_2
   - velodyne
+5) Create the folder "Checkpoints" inside complex_yolo_ros package and place [this](https://drive.google.com/drive/folders/1RHD9PBvk-9SjbKwoi_Q1kl9-UGFo2Pth?usp=sharing) pretrained weights file inside that.
 6) Go back to the workspace directory:
-`cd {Workspace}`
+`cd Complex-YOLO-ROS-3D-Object-Detection`
 7) Build the ROS packages
 `catkin_make`
 8) Set up the environment:
