@@ -37,6 +37,6 @@ CV Bridge
 ## Usage
 1) Create a new workspace directory:
 
-`mkdir {Workspace}
+`mkdir {Workspace}`
 
-cd {Workspace}`
+`cd {Workspace}`
