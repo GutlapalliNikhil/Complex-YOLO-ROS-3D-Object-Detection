@@ -18,7 +18,7 @@ The Complex YOLO ROS 3D Object Detection project is an integration of the [Compl
 
 
 ## Motivation
-The project's goal is to empower robots and autonomous vehicles with robust and real-time perception capabilities, crucial for real-world applications such as autonomous navigation, object tracking, and dynamic environment interaction. By leveraging advanced 3D object detection algorithms within the ROS ecosystem, the Complex YOLO ROS project opens new horizons for safer and more efficient robotics in dynamic and challenging environments.
+The project's goal is to empower robots and autonomous vehicles with robust and real-time perception capabilities, crucial for real-world applications such as autonomous navigation, object tracking, and dynamic environment interaction. By leveraging advanced 3D object detection algorithms within the ROS ecosystem, the Complex YOLO ROS project opens new horizons for safer and more efficient robotics in dynamic and challenging environments. 
 
 ## Installation
 Python 3  
